@@ -1,0 +1,458 @@
+.main-profile-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premium-e {
+    width: 30px;
+    height: 30px;
+    background: url(../../media/com-media/premium_e.png);
+    background-size: 35px;
+    background-position: center;
+    filter: drop-shadow(0px 0px 2px rgb(255, 40, 12));
+}
+
+.center-profile-1 {
+    width: 700px;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    background: linear-gradient(to bottom, #c9aeff, whitesmoke);
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid rgba(0, 0, 0, 0.250); */
+}
+
+
+.settings-corner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    top: 0;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    margin: 20px 10px;
+}
+
+.settings:active {
+    transform: scale(0.95);
+}
+
+.settings-img {
+    width: 80%;
+    height: 80%;
+    background: url(../../media/com-media/settings.svg);
+    background-size: contain;
+}
+
+.bottom-1 {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+}
+
+.aria-followers {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.follow {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: rgb(90, 90, 90);
+}
+
+.horizontal {
+    height: 35px;
+    border-right: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.follow:active {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 0px #6731d2;
+}
+
+.activity {
+    color: #6257df;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+    border: 2px solid rgb(255, 43, 6);
+    background: url(../../media/com-media/profile.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pfp-ret-img {
+    width: 100%;
+}
+
+.pfp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frame {
+    position: absolute;
+    z-index: 101;
+    width: 200px;
+    height: 200px;
+    background: url(../../media/com-media/frame-e.png);
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desc-pfp {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.row-1-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.title-default {
+    background-color: rgb(4, 126, 75);
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 3px 5px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp-username {
+    font-style: italic;
+}
+
+
+.f-m {
+    display: flex;
+    flex-direction: row;
+}
+
+.edit-pfp-btn {
+    font-weight: 500;
+    color: white;
+    background-color: #6257df;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+
+.edit-pfp-btn:active {
+    transform: scale(0.95);
+}
+
+.edit-pfp-btn2 {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-left: 5px;
+}
+
+.edit-pfp-btn2:active {
+    transform: scale(0.95);
+}
+
+.row-3-desc {
+    margin-top: 15px;
+}
+
+.edit-pen {
+    width: 12px;
+    margin-left: 3px;
+}
+
+/* row-4 */
+
+.row-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.title-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+
+}
+
+.title-grid div {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* bio */
+
+.bio-div {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.bio {
+    padding: 10px;
+}
+
+.bio p {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(88, 88, 88);
+}
+
+/* gossip */
+
+.gossip-div {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.gossip {
+    margin: 10px 10px 30px 10px;
+    padding: 10px;
+    color: white;
+    border: 1px solid #6731d25d;
+    border-radius: 5px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px #58509b45, -2px -2px 3px #6257df77;
+    background: linear-gradient(to right, rgb(57, 8, 147), rgb(114, 57, 219));
+}
+
+.gossip p {
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+    margin-top: 5px;
+    height: 85px;
+    overflow: hidden;
+}
+
+.gossip-div h5 {
+    text-align: center;
+}
+
+.react-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.react-img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.react {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 5px;
+    color: black;
+}
+
+
+.like {
+    background-color: rgb(138, 218, 138);
+    /* border: 1px solid green; */
+}
+
+.comment {
+    background-color: rgb(196, 199, 231);
+    /* border: 1px solid rgb(192, 0, 0); */
+}
+
+/* royalty */
+
+.royalty-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.royalty {
+    width: 95%;
+    height: 100px;
+    background-image: linear-gradient(145deg, #772f1a 0%, #f2a65a 74%);
+    margin: 15px 0;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.royalty-half-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership-act {
+    padding: 3px 10px;
+    background-color: rgb(149, 37, 2);
+    border-radius: 15px;
+}
+
+
+/* ########### */
+
+.tile-main {
+    padding: 5px 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #a80077;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+50,a80077+51,db36a4+100;Pink+Gloss */
+    background: linear-gradient(45deg, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+
+/* media */
+
+
+@media screen and (max-width: 750px) {
+
+    /* 500 */
+    .center-profile-1 {
+        width: 100vw;
+    }
+
+    .profile-section {
+        width: 100vw;   
+    }
+
+    /* gossip */
+
+    .gossip p {
+        font-size: 13px;
+    }
+
+    .aria-followers {
+        width: 95%;
+        background-color: #574faa;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #574faa;
+    }
+
+    .horizontal {
+        border: 1px solid rgba(255, 255, 255, 0.336);
+        border-radius: 5px;
+    }
+
+    .aria-followers h4,
+    .aria-followers h5 {
+        color: white !important;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    /* 400 */
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    /* 350 */
+   
+}
+
+@media screen and (max-width: 420px) {
+
+    /* 330 */
+    
+}

@@ -1,0 +1,292 @@
+header {
+    box-shadow: 1px 1px 5px rgba(131, 131, 131, 0.425);
+}
+
+.feed-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.feed-center {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.feed-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.feed-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dadada6b;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.568);
+    color: black;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.feed-user {
+    margin-left: 5px;
+}
+
+.feed-pfp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feed-profile {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid rgb(78, 28, 170);
+}
+
+.uname-inp {
+    background: transparent;
+    border: none;
+}
+
+.feed-time {
+    font-size: 11px;
+    font-weight: 700;
+    color: gray;
+}
+
+.feed-btm {
+    display: flex;
+    flex-direction: row;
+}
+
+.feed-action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.feed-data {
+    /* height: 150px; */
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.f-data-title {
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.feed-text {
+    font-size: 13px;
+    font-weight: 700;
+    white-space: pre-line;
+    max-height: 100px;
+}
+
+
+.react-comb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.feed-like {
+    margin-top: 2px;
+}
+
+.react-same {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5px 15px 5px 0;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+}
+
+.react-f-img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.cmt-img {
+    margin-right: 2px !important;
+}
+
+.react-f-img2 {
+    width: 15px;
+    margin-right: 5px;
+    display: none;
+}
+
+.likes-f-img {
+    width: 20px;
+}
+
+.likes-f-img2 {
+    width: 20px;
+}
+
+.feed-coin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end  ;
+}
+
+.f-coin-inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #6831D2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.don-coins-f {
+    font-size: 12px;
+}
+
+
+.feed-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.f-nav-contain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.f-nav-bars {
+    padding: 5px 0px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-nav-main {
+   background-color: #6831D2;
+   color: white;
+   border: 1px solid #6831D2;
+}
+
+.f-nav-all input[type=text] {
+    background: transparent;
+    border: none;
+    text-align: center;
+    
+    cursor: default;
+}
+
+
+.f-more-box {
+    width: 150px;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    right: 30px;
+    top: 0px;
+    display: none;
+    z-index: 102;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-more-box h4 {
+    padding: 5px 10px;
+    width: 130px;
+}
+
+.f-more-box h4:active {
+    background-color: rgb(224, 224, 224);
+}
+
+.report-f {
+    color: red;
+}
+
+.overlay-f {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.144);
+    z-index: 101;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* media */
+
+
+@media screen and (max-width: 750px) {
+    /* 500 */
+    .feed-nav {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    /* 400 */
+    .feed-nav {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* 350 */
+    .feed-nav {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* 330 */
+    .feed-nav {
+        width: 330px;
+    }
+}

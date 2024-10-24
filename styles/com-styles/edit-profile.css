@@ -1,0 +1,226 @@
+.edit-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.151);
+    color: rgba(216, 18, 18, 0.795);
+    padding: 10px 0;
+    margin: 10px 2px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.edit-center {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-pic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pfp-ret-img {
+    width: 95%;
+}
+
+.add-pic-1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #6731d2;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-plus {
+    width: 30px;
+    margin-top: -30px;
+    margin-right: -70px;
+}
+
+.txt-1 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6731d2;
+}
+
+/* Hide the arrows for input with class "age-txt" */
+input.age-txt::-webkit-inner-spin-button,
+input.age-txt::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.age-txt {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+.edit-user {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    align-items: left;
+}
+
+.e-txt-all {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    background: transparent;
+    padding: 5px 0;
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+label {
+    margin-top: 35px;
+    color: #6731d2;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.bio-txt {
+    height: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    resize: none;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.bio-txt::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, and Opera */
+}
+
+.bio-txt:focus {
+    height: 100px;
+}
+
+.save-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    padding: 15px 0;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to bottom, rgb(57, 8, 147), rgb(114, 57, 219));
+    color: white;
+    box-shadow: 0px 0px 5px #6831D2;
+    transition: all 0.3s;
+}
+
+.save-edit:active {
+    box-shadow: none;
+}
+
+.save-coins {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.save-txt {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.e-cost {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.home-edit {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 0;
+    margin: 15px 0;
+    font-weight: 700;
+    background-color: rgba(207, 4, 4, 0.664);
+    box-shadow: 0px 0px 5px red;
+    transition: all 0.3s;
+}
+
+.home-edit:active {
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+/* media */
+
+@media screen and (max-width: 750px) {
+    /* 500 */
+    .edit-center {
+        width: 500px;
+    }
+
+    .edit-user {
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    /* 400 */
+    .edit-center {
+        width: 400px;
+    }
+
+    .edit-user {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* 350 */
+    .edit-center {
+        width: 350px;
+    }
+
+    .edit-user {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* 330 */
+    .edit-center {
+        width: 330px;
+    }
+
+    .edit-user {
+        width: 320px;
+    }
+}

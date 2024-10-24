@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+    user-select: none;
+}
+
+textarea,
+input {
+    outline: none !important;
+}
+
+
+/* loader */
+
+.load-strip {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.689);
+}
+
+/* >>> */
+
+.loaderRectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3px;
+}
+
+.loaderRectangle div {
+    width: 10px;
+    height: 16px;
+    animation: .9s ease-in-out infinite;
+    background: #6831D2;
+    box-shadow: 0 0 20px #6731d298;
+}
+
+.loaderRectangle div:nth-child(1) {
+    animation-name: rectangleOneAnim;
+    animation-delay: 1s;
+}
+
+@keyframes rectangleOneAnim {
+    0% {
+        height: 15px;
+    }
+
+    40% {
+        height: 30px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+.loaderRectangle div:nth-child(2) {
+    animation-name: rectangleTwoAnim;
+    animation-delay: 1.1s;
+}
+
+@keyframes rectangleTwoAnim {
+    0% {
+        height: 15px;
+    }
+
+    40% {
+        height: 40px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+.loaderRectangle div:nth-child(3) {
+    animation-name: rectangleThreeAnim;
+    animation-delay: 1.2s;
+}
+
+@keyframes rectangleThreeAnim {
+    0% {
+        height: 15px;
+    }
+
+    40% {
+        height: 50px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+.loaderRectangle div:nth-child(4) {
+    animation-name: rectangleFourAnim;
+    animation-delay: 1.3s;
+}
+
+@keyframes rectangleFourAnim {
+    0% {
+        height: 15px;
+    }
+
+    40% {
+        height: 40px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+.loaderRectangle div:nth-child(5) {
+    animation-name: rectangleFiveAnim;
+    animation-delay: 1.4s;
+}
+
+@keyframes rectangleFiveAnim {
+    0% {
+        height: 15px;
+    }
+
+    40% {
+        height: 30px;
+    }
+
+    100% {
+        height: 15px;
+    }
+}
+
+/* loader */
+
+.login-str-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-login-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-login-1 {
+    width: 50%;
+    background: url(../media/login-f/login-nc-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(-100%);
+}
+
+.left-div-login-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+    width: 100%;
+}
+
+.right-sub-1 {
+    margin: 30px;
+}
+
+.logo-login-1 {
+    width: 60px;
+}
+
+.ex-logo-login-1 {
+    color: #6831D2;
+    margin-left: 10px;
+}
+
+.login-str-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-txt-1 {
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-div-1 {
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 550;
+}
+
+.text-in-1 {
+    background: transparent;
+    border: 1px solid gray;
+    padding: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+
+
+.btn-1 {
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: #6831D2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.15s;
+    border: 1px solid #6831D2;
+}
+
+.btn-1:hover {
+    background-color: #743fde;
+}
+
+.btn-1:active {
+    background-color: #743fde;
+}
+
+
+/* checkbox */
+
+.cont {
+    display: flex;
+    align-items: center;
+    transform: scale(1);
+}
+
+input[type="checkbox"] {
+    height: 1.1rem;
+    width: 1.1rem;
+    margin: 5px;
+    display: inline-block;
+    appearance: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid #6831D2;
+    border-radius: 19%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+input[type="checkbox"]::after {
+    content: '';
+    display: block;
+    height: 0.5rem;
+    width: .1rem;
+    border-bottom: .31rem solid #ffffff;
+    border-right: .31rem solid #ffffff;
+    opacity: 0;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    transition: .25s ease;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    background-color: #6831D2;
+    border-radius: 19%;
+    opacity: .5;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease;
+}
+
+.downloads {
+    width: 30px;
+}
+
+input[type="checkbox"]:checked::before {
+    height: 130%;
+    width: 130%;
+    opacity: 100%;
+}
+
+input[type="checkbox"]:checked::after {
+    opacity: 100%;
+}
+
+span {
+    font-size: 2rem;
+}
+
+/* checkbox */
+
+.c-anc {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.forgot-class-1 {
+    color: #491f9d;
+    text-decoration: none;
+}
+
+.login-str-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.acc-ask-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.sign-a-1 {
+    margin-left: 10px;
+    color: #491f9d;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ####### Media Queries ######## */
+
+@media screen and (max-width: 1000px) {
+    .right-login-1 {
+        display: none;
+    }
+
+    .left-login-1 {
+        width: 100%;
+    }
+
+    .nvm {
+        cursor: default;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ex-logo-login-1 {
+        font-size: 20px;
+    }
+
+    .downloads {
+        width: 25px;
+    }
+
+    .logo-login-1 {
+        width: 45px;
+    }
+
+    .text-in-1 {
+        font-weight: 500;
+    }
+
+    .logo-div-1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .text-in-1 {
+        margin-bottom: 25px;
+    }
+
+    .top-txt-1 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-div-1 {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-div-1 {
+        width: 250px;
+    }
+}

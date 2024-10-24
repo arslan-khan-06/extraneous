@@ -1,0 +1,137 @@
+.col-header-1 {
+    margin-left: 0 !important;
+}
+
+.create-main-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-section-1 {
+    width: 700px;
+}
+
+.form-create {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+label {
+    width: 100%;
+}
+
+.title-tag {
+    color: #6831D2;
+}
+
+.c-title {
+    width: 90%;
+    padding: 10px 15px 5px 5px;
+    border: none;
+    border-bottom: 1px solid #6831D2;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #6831D2;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    resize: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.post-area {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6831D2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.15s;
+    border: 1px solid #6831D2;
+}
+
+.post-btn:hover {
+    background-color: #743fde;
+}
+
+.post-btn:active {
+    background-color: #743fde;
+}
+
+.word-count {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.words {
+    margin-left: 5px;
+}
+
+
+
+
+/* media */
+
+@media screen and (max-width: 750px) {
+    .create-section-1 {
+        width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    .create-section-1 {
+        width: 400px;
+    }
+
+    .post-area {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .create-section-1 {
+        width: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    .create-section-1 {
+        width: 330px;
+    }
+    
+}

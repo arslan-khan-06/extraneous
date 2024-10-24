@@ -1,0 +1,134 @@
+.srch-btn {
+    background: transparent;
+    border: none;
+}
+
+.col-header-1 {
+    width: 100%;
+}
+
+.container-header-1 {
+    background: linear-gradient(to right, #3f217a, #4205bb, #6130c4);
+    margin: 15px 0;
+    border-radius: 30px;
+    padding: 0 !important;
+}
+
+.srch-inp {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: transparent;
+}
+
+.srch-inp::placeholder {
+    color: rgb(179, 179, 179);
+    font-style: italic;
+}
+
+.srch-inp:focus {
+    box-shadow: inset 0px 0px 3px white;
+}
+
+
+.srch-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srch-center {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.srch-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.s-nav-all {
+    width: 30%;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 0;
+    border: 1px solid black;
+    color: black;
+}
+
+.s-n-active {
+    background-color: #6831D2;
+    border: 1px solid #6831D2;
+    color: white;
+}
+
+
+.s-user-info {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.s-user-details {
+    width: 95%;
+    background-color: #dadada6b;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.568);
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+.s-pfp {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+/* media */
+
+
+@media screen and (max-width: 750px) {
+    /* 500 */
+    .srch-center {
+        width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    /* 400 */
+    .srch-center {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* 350 */
+    .srch-center {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* 330 */
+    .srch-center {
+        width: 330px;
+    }
+}

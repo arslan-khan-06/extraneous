@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+}
+
+#new-r {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#new-r img {
+    width: 100px;
+}
+
+.this {
+    display: none;
+    margin-top: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.upload-btn {
+    display: none;
+}
+
+.long-txt {
+    width: 700px;
+}
+
+#new-select {
+    padding: 10px 15px;
+    background-color: #743FDE;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#new-select:hover {
+    background-color: #8b5be9;
+}
+
+.card {
+    background-color: rgb(33, 33, 33);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.croppie-container {
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cr-slider {
+    display: none;
+}
+
+.crop_image {
+    padding: 10px 15px;
+    background-color: #743FDE;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.crop_image:hover {
+    background-color: #8b5be9;
+}
+
+.upload-btn2 {
+    padding: 10px 15px;
+    background-color: #743FDE;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.upload-btn:active {
+    background-color: #8b5be9;
+}
+
+
+.new-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .long-txt {
+        width: 300px;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .croppie-container {
+        width: 100%;
+    }
+}
