@@ -1,0 +1,193 @@
+<!-- <?php
+session_start();
+if (isset($_SESSION['logged_in'])) {
+    unset($_SESSION['verified']);
+    unset($_SESSION['signed_up_prep']);
+    unset($_SESSION['signed_up']);
+    unset($_SESSION['changed_password']);
+    unset($_SESSION['email_taken']);
+    unset($_SESSION['username_taken']); 
+    unset($_SESSION['invalid_un']);
+    unset($_SESSION['key_su']);
+} else {
+    session_destroy();
+    header('Location: ../sign-in/login');
+}
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- icon -->
+    <link rel="icon" href="../media/default/extraneous-logo-2-removed.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles/com-styles/default1.css">
+    <link rel="stylesheet" href="../styles/com-styles/chat.css">
+</head>
+
+<body>
+
+    <!-- ######## Header ####### -->
+    <header>
+        <div class="str-header" style="position: relative;">
+            <div class="overlay-f">
+
+            </div>
+            <div class="container-header-1">
+                <div class="col-header-1">
+                    <img src="../media/com-media/back.svg" alt="back" class="back">
+
+                    <div class="chat-profile"
+                        style="background: url(../media/com-media/journey.jpg); background-size: cover;">
+
+                    </div>
+                    <div class="chat-un-div">
+                        <h4 class="chart-name">Roman</h4>
+                        <h6 class="chat-un">roman_12</h6>
+                    </div>
+                </div>
+                <div class="notification-div feed-action">
+                    <img class="feed-action-i" src="../media/com-media/more.svg" alt="more" class="chat-more-img">
+                    <div class="f-more-box">
+                        <div class="report-f">
+                            <h4>Report</h4>
+                        </div>
+                        <div>
+                            <h4>Delete</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ######## Header ####### -->
+
+    <div class="chat-main">
+        <div class="chat-center">
+            <a href="#base" id="down" style="opacity: 0;">1</a>
+            <div class="sc-chat">
+
+                <div class="them message-div">
+                    <div class="them-container message-container">
+                        <p class="them-txt m-txt">
+                            Hi, listen, im not here for any negotiation, u better watch the mat nsdsadsadsadsadsad
+                            asdsadsadsadsadsdsdsadsadsadsadsadsadsadsadasd
+                        </p>
+                        <p class="time">9:30am</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="us message-div">
+                    <div class="us-container message-container">
+                        <p class="us-txt m-txt">
+                            ok
+                        </p>
+                        <p class="time">9:31am</p>
+                    </div>
+                </div>
+
+                <div class="us message-div">
+                    <div class="us-container message-container">
+                        <p class="us-txt m-txt">
+                            I am also not dying for ur replies. I am going to block you.
+                        </p>
+                        <p class="time">9:31am</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="them message-div">
+                    <div class="them-container message-container">
+                        <p class="them-txt m-txt">
+                            Oh please... give me a break... who the hell r u to block me!
+                            Infact i was going to block u.
+                        </p>
+                        <p class="time">9:55am</p>
+                    </div>
+                </div>
+
+                <div class="them message-div">
+                    <div class="them-container message-container">
+                        <p class="them-txt m-txt">
+                            I should have known how cheap and crazy you are.
+                        </p>
+                        <p class="time">9:56am</p>
+                    </div>
+                </div>
+
+                <div class="them message-div">
+                    <div class="them-container message-container">
+                        <p class="them-txt m-txt">
+                            We are done..
+                        </p>
+                        <p class="time">9:56am</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="us message-div">
+                    <div class="us-container message-container">
+                        <p class="us-txt m-txt">
+                            Fantastic! now since you know me in real, get lost!!
+                        </p>
+                        <p class="time">10:21am</p>
+                    </div>
+                </div>
+
+                <div class="us message-div">
+                    <div class="us-container message-container">
+                        <p class="us-txt m-txt">
+                            Bye !...
+                        </p>
+                        <p class="time">10:21am</p>
+                    </div>
+                </div>
+
+
+                <!-- base -->
+                <div id="base">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ######## Footer ####### -->
+    <footer>
+        <div class="msg-box-main">
+            <div class="msg-box">
+                <form action="# " class="msg-form">
+                    <textarea name="message" id="messageInput" class="message-el" placeholder="Message" oninput="autoExpand(this)"></textarea>
+                    <button type="submit" class="send-btn" id="sendButton">
+                        <img src="../media/com-media/send.svg" alt="send" class="send">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- ######## Footer ####### -->
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../js/community/default.js"></script>
+    <script src="../js/community/chat.js"></script>
+</body>
+
+</html>
